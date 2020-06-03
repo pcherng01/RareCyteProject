@@ -21,7 +21,7 @@ def ping_pong():
 
 @app.route('/json', methods=['GET'])
 def getMetaData():
-    with open('PIA04216_orig.json') as f:
+    with open('../resources/images/PIA04216_orig.json') as f:
         data = json.load(f)
     return data
 
