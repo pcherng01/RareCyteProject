@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, send_file
 from flask_cors import CORS
 import json
 
@@ -25,6 +25,11 @@ def getMetaData(name):
     with open(metadataName) as f:
         data = json.load(f)
     return data
+
+@app.route('/images/<name>', methods=['GET'])
+def getImage(name):
+    imageName = '../resources/images/%s.jpg' % name
+    return send_file(imageName, mimetype='image/gif')
 
 
 if __name__ == '__main__':
