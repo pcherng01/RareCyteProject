@@ -19,9 +19,10 @@ CORS(app, resources={r'/*': {'origins': '*'}})
 def ping_pong():
     return jsonify('pong!')
 
-@app.route('/json', methods=['GET'])
-def getMetaData():
-    with open('../resources/images/PIA04216_orig.json') as f:
+@app.route('/images/metadata/<name>', methods=['GET'])
+def getMetaData(name):
+    metadataName = '../resources/images/%s.json' % name
+    with open(metadataName) as f:
         data = json.load(f)
     return data
 
