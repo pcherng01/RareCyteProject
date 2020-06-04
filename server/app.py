@@ -35,6 +35,7 @@ def getImage(name):
 @app.route('/images/list', methods=['GET'])
 def getImageList():
     arr = fnmatch.filter(os.listdir('../resources/images'), '*.jpg')
+    arr = [os.path.splitext(file)[0] for file in arr]
     return json.dumps(arr);
 
 
