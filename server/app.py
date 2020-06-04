@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, send_file
 from flask_cors import CORS
 import json
+import os, fnmatch
 
 
 # configuration
@@ -21,7 +22,7 @@ def ping_pong():
 
 @app.route('/images/metadata/<name>', methods=['GET'])
 def getMetaData(name):
-    metadataName = '../resources/images/%s.json' % name
+    metadataName = '../resources/metadata/%s.json' % name
     with open(metadataName) as f:
         data = json.load(f)
     return data
@@ -30,6 +31,11 @@ def getMetaData(name):
 def getImage(name):
     imageName = '../resources/images/%s.jpg' % name
     return send_file(imageName, mimetype='image/gif')
+
+@app.route('/images/list', methods=['GET'])
+def getImageList():
+    arr = fnmatch.filter(os.listdir('../resources/images'), '*.jpg')
+    return json.dumps(arr);
 
 
 if __name__ == '__main__':
