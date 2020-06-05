@@ -16,6 +16,7 @@ Server (For Windows):
 	- Click 'Ok'
 	- Close & restart the shell/PowerShell 
 - Install pip:
+	- In the project folder containing the 'get-pip.py' script,
 	- Run 'py get-pip.py'
 - Install flask:
 	- Run 'py -m pip install flask
