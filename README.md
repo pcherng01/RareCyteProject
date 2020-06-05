@@ -38,3 +38,4 @@ Client:
 - Run 'Set-ExecutionPolicy RemoteSigned' in PowerShell
 - Go to client folder, run 'npm i'
 - Then run 'npm run serve'
+- In browser, go to 'http://localhost:8081/'
