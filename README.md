@@ -24,12 +24,13 @@ Server (For Windows):
 - You should see the server started
 
 Client:
+- Download the latest Node from the official Node website: https://nodejs.org/en/download/
+	- When installing, click 'Add to Path'
 - Make sure you have npm installed
 - Run 'npm install -g @vue/cli' to install Vue
 - Add vue to path (Similar to how we added Python to PATH)
-- Edit the Path variable, click 'New'
-- Add 'C:\Users\YourUserName\AppData\Roaming\npm'
-	- Mine looks something like 'C:\Users\Leaf\AppData\Roaming\npm'
-- Download the latest Node and update to latest npm
+	- Edit the Path variable, click 'New'
+	- Add 'C:\Users\YourUserName\AppData\Roaming\npm'
+		- Mine looks something like 'C:\Users\Leaf\AppData\Roaming\npm'
 - Go to client folder, run 'npm i'
 - Then run 'npm run serve'
