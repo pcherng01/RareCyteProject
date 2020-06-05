@@ -32,5 +32,7 @@ Client:
 	- Edit the Path variable, click 'New'
 	- Add 'C:\Users\YourUserName\AppData\Roaming\npm'
 		- Mine looks something like 'C:\Users\Leaf\AppData\Roaming\npm'
+- In some cases, PowerShell will block script from running, thus it cannot run vue commands. More info: https://stackoverflow.com/questions/57673913/vsc-powershell-after-npm-updating-packages-ps1-cannot-be-loaded-because-runnin
+- Run 'Set-ExecutionPolicy RemoteSigned' in PowerShell
 - Go to client folder, run 'npm i'
 - Then run 'npm run serve'
