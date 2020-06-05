@@ -16,9 +16,9 @@ Server (For Windows):
 	- Click 'Ok'
 	- Close & restart the shell/PowerShell 
 - Install flask:
-	- Run 'pip install flask
-	- Run 'pip install virtualenv'
-	- Run 'pip install flask-cors'
+	- Run 'py -m pip install flask
+	- Run 'py -m pip install virtualenv'
+	- Run 'py -m pip install flask-cors'
 - Go to server folder
 - Run 'py app.py' in shell
 - You should see the server started
