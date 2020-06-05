@@ -23,9 +23,13 @@ Server (For Windows):
 - Run 'py app.py' in shell
 - You should see the server started
 
-Installing & Running the Client
-1. Install Vue. NodeJs is needed for Vue
-2. Install Material Design Bootstrap:
-3. Go to client directory
-4. Run 'vue add mdb'
-5. Run client: 'npm run serve'
+Client:
+- Make sure you have npm installed
+- Run 'npm install -g @vue/cli' to install Vue
+- Add vue to path (Similar to how we added Python to PATH)
+- Edit the Path variable, click 'New'
+- Add 'C:\Users\YourUserName\AppData\Roaming\npm'
+	- Mine looks something like 'C:\Users\Leaf\AppData\Roaming\npm'
+- Download the latest Node and update to latest npm
+- Go to client folder, run 'npm i'
+- Then run 'npm run serve'
