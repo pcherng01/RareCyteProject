@@ -15,6 +15,8 @@ Server (For Windows):
 		;C:\Users\Leaf\AppData\Local\Programs\Python\Python38-32\Scripts
 	- Click 'Ok'
 	- Close & restart the shell/PowerShell 
+- Install pip:
+	- Run 'py get-pip.py'
 - Install flask:
 	- Run 'py -m pip install flask
 	- Run 'py -m pip install virtualenv'
